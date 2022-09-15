@@ -13,7 +13,11 @@
 }
 
 body{
-  background: url("assets/Fundo1.png") no-repeat center top fixed;
+  line-height: 160%;
+  background: url("assets/Fundo1.png") no-repeat center top;
+  background-size: 100% auto;
+  background-color: #121214;
+
 }
 
 
@@ -23,6 +27,12 @@ header{
   justify-content: center;
   margin-top: 3.2rem;
 }
+header div {
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  border-radius:50%;
+  width: 14rem;
+  height: 14rem;
+}
 
 header div img {
   width: 12rem;
@@ -31,31 +41,67 @@ header div img {
   margin-bottom: 3.2rem;
   
 }
+
 main{
+  max-width: 58rem;
+  width: 90%;
+  margin: auto; 
+
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap:2.4rem;
 }
 
-section{
-  width: 58rem;
-  height: 26.4rem;
-  border: 1px solid red;
-  background-color: hsla(257, 16%, 18%, 1);
-  border-radius: .8rem;
-  margin-bottom: 2.4rem;
+section{   
+  color: white;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  padding-top:.4rem;
+  border-radius: 1.2rem;  
 }
+
+section div{
+  background-color: hsla(257, 16%, 18%, 1);
+  padding: 3.2rem;
+  padding-top: 2.4rem;
+  border-radius: .8rem;
+
+}
+
+section h2{ 
+  font-size: 2.4rem;
+  line-height: 160%;
+  letter-spacing: -0.47px;
+}
+
+section p{
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: -0.18px;
+  color: #A1A1AA;
+}
+
 section ul{
 display: flex;
-flex-direction: row;
-align-items: flex-start;
+flex-wrap: wrap;
+gap:1.6rem;
+list-style: none;
 
 }
 
-section ul li img{
+.games-list img{
   width: 9rem;
   height: 12rem;
   padding: 1rem;
-  border-radius: .8rem;
-  list-style: none;
+  border-radius: .8rem; 
+  margin-top: 3.2rem;
+}
+
+.channel-list img {
+   border-radius: 50%;
+   width: 7rem;
+   margin-top: 3.2rem;
+}
+
+.rede-list img {
+  margin-top: 3.2rem;
 }
